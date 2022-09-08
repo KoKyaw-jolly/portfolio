@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md glass-bg">
+    <!-- <a class="navbar-brand" href="#">Ko Ko Kyaw</a> -->
+    <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="clickHamburger()" [ngClass]="hambugerStatus ? 'active' : ''">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="theme-btn" (click)="clickTheme()">
+        <i class="bi bi-moon-fill" *ngIf="themeStatus" style="font-size: 20px;"></i>
+        <i class="bi bi-sun-fill" *ngIf="!themeStatus" style="font-size: 25px;"></i>
+    </div>
+</nav>
