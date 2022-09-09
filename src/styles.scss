@@ -14,3 +14,110 @@ body {
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+
+//replace
+p {
+    margin: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+
+// different margin padding for px and vw
+@for $x from 0 to 1000 {
+    .pad-px#{$x} {
+        padding: $x * 1px !important;
+    }
+
+    .padt-px#{$x} {
+        padding-top: $x * 1px !important;
+    }
+
+    .padb-px#{$x} {
+        padding-bottom: $x * 1px !important;
+    }
+
+    .padl-px#{$x} {
+        padding-left: $x * 1px !important;
+    }
+
+    .padr-px#{$x} {
+        padding-right: $x * 1px !important;
+    }
+
+    .pad-vw#{$x} {
+        padding: $x * 1vw !important;
+    }
+
+    .padt-vw#{$x} {
+        padding-top: $x * 1vw !important;
+    }
+
+    .padb-vw#{$x} {
+        padding-bottom: $x * 1vw !important;
+    }
+
+    .padl-vw#{$x} {
+        padding-left: $x * 1vw !important;
+    }
+
+    .padr-vw#{$x} {
+        padding-right: $x * 1vw !important;
+    }
+}
+
+@for $x from 0 to 1000 {
+    .mar-px#{$x} {
+        margin: $x * 1px !important;
+    }
+
+    .mart-px#{$x} {
+        margin-top: $x * 1px !important;
+    }
+
+    .marb-px#{$x} {
+        margin-bottom: $x * 1px !important;
+    }
+
+    .marl-px#{$x} {
+        margin-left: $x * 1px !important;
+    }
+
+    .marr-px#{$x} {
+        margin-right: $x * 1px !important;
+    }
+
+    .mar-vw#{$x} {
+        margin: $x * 1vw !important;
+    }
+
+    .mart-vw#{$x} {
+        margin-top: $x * 1vw !important;
+    }
+
+    .marb-vw#{$x} {
+        margin-bottom: $x * 1vw !important;
+    }
+
+    .marl-vw#{$x} {
+        margin-left: $x * 1vw !important;
+    }
+
+    .marr-vw#{$x} {
+        margin-right: $x * 1vw !important;
+    }
+}
+
+// button
+.common-button {
+    background-color: #333333;
+    height: 40px;
+    /* line-height: 0; */
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
