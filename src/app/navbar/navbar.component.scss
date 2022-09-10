@@ -1,7 +1,13 @@
+// @import '../../styles.scss';
+
 .navbar {
     margin: 5vw;
     border-radius: 15px;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    height: 54px;
+    z-index: 999999;
 
     .navbar-nav {
         .nav-item {
@@ -12,7 +18,7 @@
             justify-content: center;
 
             .nav-link {
-                color: #333333;
+                color: var(--color-dark);
                 font-size: 1.2rem;
                 font-weight: bold;
                 width: max-content;
@@ -23,7 +29,7 @@
 
         .active {
             .nav-link {
-                border-bottom: 3px solid #333333;
+                border-bottom: 3px solid var(--color-dark);
             }
         }
     }
@@ -36,7 +42,7 @@
     .line {
         width: 35px;
         height: 4px;
-        background-color: #ecf0f1;
+        background-color: var(--color-dark);
         display: block;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
@@ -70,11 +76,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-dark);
 }
 
 @media (max-width: 767px) {
     .navbar {
         margin: 8vw;
+        width: 84vw;
 
         .navbar-nav {
             .nav-item {

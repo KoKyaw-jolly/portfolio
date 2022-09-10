@@ -22,6 +22,7 @@ export class NavbarComponent implements OnInit {
 
   clickTheme() {
     this.themeStatus = !this.themeStatus;
+    document.body.classList.toggle('dark');
     if (this.themeStatus) {
       //sun
     } else {

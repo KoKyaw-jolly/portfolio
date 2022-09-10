@@ -1,18 +1,40 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+:root {
+    --color-dark: #333333;
+    --color-light: #ffffff;
+
+    --glass-bg-color: rgba(255, 255, 255, .28);
+
+    --body-background: linear-gradient(215deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(290deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    ;
+}
+
+
+
+.dark {
+
+    --color-light: #333333;
+    --color-dark: #ffffff;
+
+    --glass-bg-color: rgba(0, 0, 0, 0.4);
+    --body-background: linear-gradient(20deg, #000000 0%, #000000 100%), radial-gradient(60.91% 100% at 50% 0%, #a6a3a3 0%, #000000 100%), linear-gradient(290deg, #695c5c 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+}
+
 body {
-    background: linear-gradient(215deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(290deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-image: var(--body-background);
     background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed;
+    color: var(--color-dark);
 }
 
 .glass-bg {
-    background-color: rgb(255 255 255 / 31%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background-color: var(--glass-bg-color);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 //replace
@@ -112,12 +134,13 @@ p {
 
 // button
 .common-button {
-    background-color: #333333;
+    background-color: var(--color-dark);
     height: 40px;
-    /* line-height: 0; */
+    font-size: 16px;
+    font-weight: bold;
     padding: 0px 20px;
     border-radius: 20px;
     border: none;
-    color: #ffffff;
+    color: var(--color-light);
     cursor: pointer;
 }
