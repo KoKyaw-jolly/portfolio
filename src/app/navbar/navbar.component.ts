@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,10 +11,14 @@ export class NavbarComponent implements OnInit {
   hambugerStatus: boolean = false;
   themeStatus: boolean = false;
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
     this.themeStatus = true;
+  }
+
+  navClick(val: string) {
+    this.scroller.scrollToAnchor(val);
   }
 
   clickHamburger() {

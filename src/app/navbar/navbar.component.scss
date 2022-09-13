@@ -6,8 +6,14 @@
     position: fixed;
     top: 0;
     width: 90vw;
-    height: 54px;
-    z-index: 999999;
+    min-height: 54px;
+    z-index: 999998;
+    padding: 0;
+
+    .navbar-collapse {
+        min-height: 55px;
+        border-radius: 15px;
+    }
 
     .navbar-nav {
         .nav-item {
@@ -19,11 +25,13 @@
 
             .nav-link {
                 color: var(--color-dark);
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: bold;
                 width: max-content;
                 border-bottom: 3px solid transparent;
                 padding: 3px;
+                background: none;
+                border: none;
             }
         }
 
@@ -38,6 +46,11 @@
 
 .hamburger {
     cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    height: 54px;
+    z-index: 999999;
 
     .line {
         width: 35px;

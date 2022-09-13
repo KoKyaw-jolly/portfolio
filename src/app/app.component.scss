@@ -1,0 +1,11 @@
+.cover-bg {
+    background: var(--body-background);
+    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}

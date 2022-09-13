@@ -1,5 +1,10 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+html {
+    scroll-behavior: smooth;
+    font-size: 1.5rem;
+}
+
 :root {
     --color-dark: #333333;
     --color-light: #ffffff;
@@ -22,11 +27,6 @@
 }
 
 body {
-    background-image: var(--body-background);
-    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
     color: var(--color-dark);
 }
 
